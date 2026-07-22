@@ -24,15 +24,6 @@ A passionate programmer and developer dedicated to solving complex algorithmic p
 
 ---
 
-## 📊 Coding Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YashSharma992&show_icons=true&theme=radial" alt="Yash's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YashSharma992&layout=compact&theme=radial" alt="Top Languages" width="48%" />
-</p>
-
----
-
 ## ⚡ Quick Fact
 
 > "First, solve the problem. Then, write the code." – *John Johnson*
