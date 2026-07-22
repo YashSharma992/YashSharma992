@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Sharma | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border-color: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    /* Skills List */
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skills-list li {
+      background: #0f172a;
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+
+    /* Platform Grid */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #0f172a;
+      border: 1px solid var(--border-color);
+      padding: 0.85rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* Badges / Pill Styles for Links */
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .badge.linkedin { background-color: #0077B5; }
+    .badge.github { background-color: #24292e; border: 1px solid var(--border-color); }
+    .badge.leetcode { background-color: #FFA116; color: #000; }
+    .badge.codechef { background-color: #5B4638; }
+    .badge.hackerrank { background-color: #2EC866; }
+
+    /* Quote Box */
+    blockquote {
+      background: #0f172a;
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Hi there, I'm <span>Yash Sharma</span> 👋</h1>
+      <p class="subtitle">A passionate programmer and developer dedicated to solving complex algorithmic problems and building impactful projects.</p>
+    </header>
+
+    <section>
+      <h2>🛠️ Skills & Technologies</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> C++, Java, Python, JavaScript</li>
+        <li><strong>Problem Solving:</strong> Data Structures & Algorithms, Competitive Programming</li>
+        <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌐 Connect & Coding Profiles</h2>
+      <div class="links-grid">
+        <a href="https://www.linkedin.com/in/yash-sharma992/" target="_blank" class="link-card">
+          <span>💼 LinkedIn</span>
+          <span class="badge linkedin">Profile</span>
+        </a>
+        <a href="https://github.com/YashSharma992" target="_blank" class="link-card">
+          <span>🐙 GitHub</span>
+          <span class="badge github">Profile</span>
+        </a>
+        <a href="https://leetcode.com/u/Yash_Sharma_992/" target="_blank" class="link-card">
+          <span>🪶 LeetCode</span>
+          <span class="badge leetcode">Profile</span>
+        </a>
+        <a href="https://www.codechef.com/users/yash_sharma992" target="_blank" class="link-card">
+          <span>👨‍🍳 CodeChef</span>
+          <span class="badge codechef">Profile</span>
+        </a>
+        <a href="https://www.hackerrank.com/profile/syash6183" target="_blank" class="link-card">
+          <span>🎯 HackerRank</span>
+          <span class="badge hackerrank">Profile</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>⚡ Quick Fact</h2>
+      <blockquote>
+        "First, solve the problem. Then, write the code." – <em>John Johnson</em>
+      </blockquote>
+    </section>
+  </div>
+
+</body>
+</html>
